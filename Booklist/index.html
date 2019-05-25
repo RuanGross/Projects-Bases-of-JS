@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Book Store</title>
+</head>
+<body>
+   <div class="container">
+       <h1>BookStore</h1>
+       <form class="book-form">
+           <div>
+               <label for="title">Título</label>
+               <input type="text" id="title" class="u-full-width">
+           </div>
+           <div>
+               <label for="Author">Autor</label>
+               <input type="text" id="author" class="u-full-width">
+           </div>
+           <div>
+               <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="u-full-width">
+           </div>
+           <div>
+               <input type="submit" value="Registrar" class=" u-full-width">
+           </div>
+       </form>
+       <hr>
+       <table class="u-full-width">
+           <thead>
+               <tr>
+                   <th>Título</th>
+                   <th>Autor</th>
+                   <th>ISBN</th>
+                   <th></th>
+               </tr>
+           </thead>
+           <tbody id="book-list">
+
+           </tbody>
+       </table>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
